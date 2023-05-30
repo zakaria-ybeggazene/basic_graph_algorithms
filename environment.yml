@@ -1,0 +1,27 @@
+name: algo-avancee
+
+channels:
+- conda-forge
+
+dependencies:
+- git
+- python=3.9
+- notebook
+- jupyterlab
+#- nbgrader  # install dev version with pip instead
+- jupyter_contrib_nbextensions
+- jupytext
+- nbdime
+- ipywidgets
+- bqplot
+- qgrid
+- numpy
+- networkx >= 2.4
+- pytest
+- rise
+- mypy
+- flake8
+- tqdm
+- pip
+- pip:
+    - .

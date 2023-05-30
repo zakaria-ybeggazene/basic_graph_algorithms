@@ -1,0 +1,29 @@
+1- Combien d'arbres qu'on peut construire avec n sommets ?
+on a 2 cas, soit on considère que les sommets sont identifiables (nommés) ou pas.
+Il est plus facile de considérer le cas où les sommets ne sont pas identifiables
+(on considère les formes possibles de l'arbre)
+La théorie de Polya permet d'étudier ces combinaisons.
+Pour un seul sommet, on a un seul arbre
+Pour 2 on a un seul
+Pour 3 on a un seul
+Pour 4 on a 2 arbres, 2 formes :
+	- un sommet lié à tous les autres
+	- chaque sommet est connecté au prochain (sans former un cycle)
+Pour 5, on a 3 arbres, 3 formes :
+	- un sommet lié à tous les autres
+	- chaque sommet est connecté au prochain (sans former un cycle)
+	- un sommet connecté à 3 autres, et l'un des 3 est connecté au dernier
+Pour 6, on a 6 arbres, 6 formes :
+	- un sommet lié à tous les autres
+	- chaque sommet est connecté au prochain (sans former un cycle)
+	- un sommet connecté à 4 autres et l'un des 4 est connecté au dernier
+	- un sommet connecté à 3, et 2 des 3 est connecté au 2 derniers
+	- un sommet connecté à 3, et l'un des 3 est connecté en chaine au 2 autres
+	- un sommet connecté à 3, et l'un des 3 est connecté de manière différée au 2 autres
+
+2- Nombre d'arbres couvrants (4 sommets identifiés cette fois, voir formes sur papier):
+cas 1: on a 4 lorsque chaque sommet possède 2 arêtes
+cas 2: on a 8 lorsque 2 sommets possèdent 3 et 2 possèden t 2
+cas 3: on a 16 lorsque chaque sommet possède 3 arêtes
+
+3- On obtient un arbre couvrant de valeur 34
